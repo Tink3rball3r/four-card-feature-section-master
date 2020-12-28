@@ -1,0 +1,187 @@
+:root {
+  /* font variables */
+  --fr: 62.5%;
+  /* sets the font-size to 10px */
+  --ff: poppins;
+  --fw-1: 200;
+  --fw-2: 400;
+  --fw-3: 600;
+  /* color variables */
+  --body-clr: hsl(0, 0%, 98%);
+  --card-clr: white;
+  --heading-clr: hsl(234, 12%, 34%);
+  --paragraph-clr: hsl(229, 6%, 66%);
+  /* utility variables */
+  --supervisor-border: 5px solid hsl(180, 62%, 55%);
+  --karma-border: 5px solid hsl(34, 97%, 64%);
+  --teambuilder-border:5px solid hsl(0, 78%, 62%);
+  --calculator-border:5px solid hsl(212, 86%, 64%);
+  --shadow: 0px 10px 25px -10px hsl(229, 6%, 66%);
+  /* box-shaddow */
+  --margin-card: 2rem 1rem 1rem 1rem;
+  --padding-card: 30px 25px 30px 30px;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: var(--fr);
+}
+
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin-top: 10rem;
+  background: var(--body-clr);
+  font-family: var(--ff);
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  margin: 5rem auto auto auto;
+  max-width: 70rem;
+}
+
+.header_mainHeading {
+  font-size: 4.5rem;
+  font-weight: var(--fw-1);
+  color: var(--heading-clr);
+}
+
+.header_subHeading {
+  font-size: 5.2rem;
+  font-weight: var(--fw-2);
+  color: var(--heading-clr);
+  margin-bottom: 3rem;
+}
+
+.header_paragraph {
+  margin: 1rem auto;
+  font-size: 2rem;
+  font-weight: var(--fw-2);
+  color: var(--paragraph-clr);
+}
+
+main {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card_card {
+  padding: 3rem 2.5rem 3rem 3rem;
+  width: 44rem;
+  height: 30rem;
+  background: var(--card-clr);
+  border-radius: 0.5rem;
+  text-align: left;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  margin: 3rem 2rem 2rem 2rem;
+  cursor: pointer;
+}
+
+.card_card .card_heading {
+  font-size: 2.7rem;
+  font-weight: var(--fw-2);
+  color: var(--heading-clr);
+}
+
+.card_card .card_paragraph {
+  font-size: 2rem;
+  color: var(--paragraph-clr);
+  margin-top: 0.5rem;
+}
+
+.card_card .card_image {
+  margin: 6rem 0.5rem 0.5rem 30rem;
+  width: 20%;
+}
+
+.card--teamBuilder {
+  border-top: var(--teambuilder-border);
+}
+
+.card--supervisor {
+  border-top: var(--supervisor-border);
+}
+
+.card--karma {
+  border-top: var(--karma-border);
+}
+
+.card--calculator {
+  border-top: var(--calculator-border);
+}
+
+.attribution {
+  margin-top: 9rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 1439px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    width: 30rem;
+  }
+  .header_mainHeading {
+    font-size: 2.4rem;
+  }
+  .header_subHeading {
+    font-size: 2.5rem;
+  }
+  .header_paragraph {
+    margin: 1rem auto;
+    font-size: 1.5rem;
+  }
+  .card_card {
+    margin: 1rem 1rem 2rem 1rem;
+    width: 34rem;
+    height: 25rem;
+  }
+  .card_card .card_heading {
+    font-size: 2rem;
+    font-weight: var(--fw-2);
+    color: var(--heading-clr);
+  }
+  .card_card .card_paragraph {
+    font-size: 1.5rem;
+    color: var(--paragraph-clr);
+    margin-top: 0.5rem;
+  }
+  .card_card .card_image {
+    margin: 6rem 0.5rem 0.5rem 22rem;
+    width: 20%;
+  }
+  .attribution {
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

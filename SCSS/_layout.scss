@@ -1,0 +1,98 @@
+// build page here
+
+body {
+	margin-top: 10rem;
+	background: var(--body-clr);
+	font-family: var(--ff);
+	text-align: center;
+}
+
+.header {
+	text-align: center;
+	margin: 5rem auto auto auto;
+	max-width: 70rem;
+
+	&_mainHeading {
+		font-size: 4.5rem;
+		font-weight: var(--fw-1);
+		color: var(--heading-clr);
+	}
+
+	&_subHeading {
+		font-size: 5.2rem;
+		font-weight: var(--fw-2);
+		color: var(--heading-clr);
+		margin-bottom: 3rem;
+	}
+
+	&_paragraph {
+		margin: 1rem auto;
+		font-size: 2rem;
+		font-weight: var(--fw-2);
+		color: var(--paragraph-clr);
+	}
+}
+
+main {
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+// .card_container {
+
+// }
+
+.card_card {
+	padding: 3rem 2.5rem 3rem 3rem;
+	width: 44rem;
+	height: 30rem;
+	background: var(--card-clr);
+	border-radius: 0.5rem;
+	text-align: left;
+	box-shadow: var(--shadow);
+	margin: 3rem 2rem 2rem 2rem;
+	cursor: pointer;
+
+	.card_heading {
+		font-size: 2.7rem;
+		font-weight: var(--fw-2);
+		color: var(--heading-clr);
+	}
+
+	.card_paragraph {
+		font-size: 2rem;
+		color: var(--paragraph-clr);
+		margin-top: 0.5rem;
+	}
+
+	.card_image {
+		margin: 6rem 0.5rem 0.5rem 30rem;
+		width: 20%;
+	}
+}
+
+.card--teamBuilder {
+	border-top: var(--teambuilder-border);
+}
+
+.card--supervisor {
+	border-top: var(--supervisor-border);
+}
+
+.card--karma {
+	border-top: var(--karma-border);
+	// margin-top: 5rem;
+}
+
+.card--calculator {
+	border-top: var(--calculator-border);
+}
+
+.attribution {
+	margin-top: 9rem;
+	font-size: 2rem;
+}

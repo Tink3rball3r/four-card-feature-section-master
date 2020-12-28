@@ -1,0 +1,54 @@
+// Mobile rules go here.
+@include bp-medium {
+	main {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+}
+
+@include bp-small {
+	.header {
+		width: 30rem;
+
+		&_mainHeading {
+			font-size: 2.4rem;
+		}
+
+		&_subHeading {
+			font-size: 2.5rem;
+		}
+
+		&_paragraph {
+			margin: 1rem auto;
+			font-size: 1.5rem;
+		}
+	}
+
+	.card_card {
+		margin: 1rem 1rem 2rem 1rem;
+		width: 34rem;
+		height: 25rem;
+
+		.card_heading {
+			font-size: 2rem;
+			font-weight: var(--fw-2);
+			color: var(--heading-clr);
+		}
+
+		.card_paragraph {
+			font-size: 1.5rem;
+			color: var(--paragraph-clr);
+			margin-top: 0.5rem;
+		}
+
+		.card_image {
+			margin: 6rem 0.5rem 0.5rem 22rem;
+			width: 20%;
+		}
+	}
+
+	.attribution {
+		margin-bottom: 5rem;
+		font-size: 1.2rem;
+	}
+}

@@ -1,0 +1,36 @@
+// variables and mixins go here
+:root {
+	/* font variables */
+	--fr: 62.5%; /* sets the font-size to 10px */
+	--ff: poppins;
+	--fw-1: 200;
+	--fw-2: 400;
+	--fw-3: 600;
+
+	/* color variables */
+	
+	--body-clr: hsl(0, 0%, 98%);
+	--card-clr: white;
+	--heading-clr: hsl(234, 12%, 34%);
+	--paragraph-clr: hsl(229, 6%, 66%);
+
+	/* utility variables */
+	--supervisor-border: 5px solid hsl(180, 62%, 55%);
+	--karma-border:: 5px solid hsl(34, 97%, 64%);
+	--teambuilder-border:5px solid hsl(0, 78%, 62%);
+	--calculator-border:5px solid hsl(212, 86%, 64%);
+	--shadow: 0px 10px 25px -10px hsl(229, 6%, 66%); /* box-shaddow */
+	--margin-card: 2rem 1rem 1rem 1rem;
+	--padding-card: 30px 25px 30px 30px;
+}
+
+@mixin bp-medium {
+	@media(max-width: 1439px)
+		{ @content; }
+	
+}
+
+@mixin bp-small{
+	@media(max-width:500px)
+	{@content;}
+}
