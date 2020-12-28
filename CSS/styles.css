@@ -49,13 +49,13 @@ body {
 }
 
 .header_mainHeading {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: var(--fw-1);
   color: var(--heading-clr);
 }
 
 .header_subHeading {
-  font-size: 5.2rem;
+  font-size: 4.2rem;
   font-weight: var(--fw-2);
   color: var(--heading-clr);
   margin-bottom: 3rem;
@@ -86,8 +86,8 @@ main {
 
 .card_card {
   padding: 3rem 2.5rem 3rem 3rem;
-  width: 44rem;
-  height: 30rem;
+  width: 36rem;
+  height: 27rem;
   background: var(--card-clr);
   border-radius: 0.5rem;
   text-align: left;
@@ -104,13 +104,13 @@ main {
 }
 
 .card_card .card_paragraph {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: var(--paragraph-clr);
   margin-top: 0.5rem;
 }
 
 .card_card .card_image {
-  margin: 6rem 0.5rem 0.5rem 30rem;
+  margin: 4.9rem 0.5rem 0.5rem 24rem;
   width: 20%;
 }
 
