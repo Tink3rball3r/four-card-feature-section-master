@@ -66,7 +66,6 @@ body {
 	font-weight: var(--light-font);
 }
 
-.top h1,
 .top p,
 .card p {
 	color: var(--grayish-blue);
@@ -76,7 +75,7 @@ body {
 .top h2 {
 	font-size: 1.7rem;
 }
-
+.top h1,
 .top h2,
 .card h1 {
 	color: var(--dark-blue);
@@ -115,7 +114,7 @@ body {
 		margin: 0;
 	}
 
-	.main-para {
+	.top p {
 		padding: 0;
 		margin: 0 auto;
 		width: 600px;
